@@ -5,6 +5,8 @@ description: Integrate Apointoo booking/lead capture and conversion tracking int
 
 # Apointoo integration
 
+> **Skill v1.0.0** · verified against the live Apointoo API on **2026-06-26**. See [`CHANGELOG.md`](../CHANGELOG.md). A **major** bump = a breaking change to the integration contract below.
+
 Apointoo turns booking/lead forms into clean Google Ads / Meta conversions. This skill shows how to
 connect any project to your Apointoo tenant.
 

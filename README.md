@@ -28,6 +28,13 @@ ln -s "$(pwd)/apointoo" ~/.claude/skills/apointoo
 An Apointoo account with a tenant. Get your **slug** and **publishable key** from your
 Apointoo dashboard, and add your site's origin to the tenant's allowed origins.
 
+## Updates & versioning
+
+Versioned with [SemVer](https://semver.org/) — see [`CHANGELOG.md`](CHANGELOG.md). The current version and
+the date it was last verified against the live Apointoo API are stamped at the top of
+[`apointoo/SKILL.md`](apointoo/SKILL.md). To stay current, **watch this repo's Releases** or `git pull`.
+A **major** version bump signals a breaking change to the integration contract — re-check your wiring.
+
 ## License
 
 MIT — see [`LICENSE`](LICENSE).
