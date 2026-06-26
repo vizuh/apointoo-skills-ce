@@ -4,7 +4,7 @@
 a focused, vendor-neutral guide that lets any developer wire **Apointoo** (booking / lead capture +
 conversion tracking) into any project by calling the skill.
 
-> Private for now; **built public-ready**. What may be added here is governed by [`POLICY.md`](POLICY.md).
+> Public + MIT. What may be added here is governed by [`POLICY.md`](POLICY.md).
 
 ## What it covers
 
@@ -17,10 +17,18 @@ It does **not** contain Apointoo internals (architecture, account IDs, security 
 
 ## Install
 
+Via the [skills.sh](https://www.skills.sh) CLI (Claude Code, Cursor, Codex, Copilot, Windsurf, Gemini, Cline, …):
+
 ```bash
-ln -s "$(pwd)/apointoo" ~/.claude/skills/apointoo
+npx skills add vizuh/apointoo-skills-ce
 ```
-…or copy `apointoo/` into a project's `.claude/skills/`. Then ask Claude to
+
+…or manually for Claude Code:
+
+```bash
+ln -s "$(pwd)/skills/apointoo" ~/.claude/skills/apointoo
+```
+…or copy `skills/apointoo/` into a project's `.claude/skills/`. Then ask Claude to
 *"use the apointoo skill"* / *"add Apointoo to this project"*.
 
 ## Prerequisites
@@ -32,7 +40,7 @@ Apointoo dashboard, and add your site's origin to the tenant's allowed origins.
 
 Versioned with [SemVer](https://semver.org/) — see [`CHANGELOG.md`](CHANGELOG.md). The current version and
 the date it was last verified against the live Apointoo API are stamped at the top of
-[`apointoo/SKILL.md`](apointoo/SKILL.md). To stay current, **watch this repo's Releases** or `git pull`.
+[`skills/apointoo/SKILL.md`](skills/apointoo/SKILL.md). To stay current, **watch this repo's Releases** or `git pull`.
 A **major** version bump signals a breaking change to the integration contract — re-check your wiring.
 
 ## License
