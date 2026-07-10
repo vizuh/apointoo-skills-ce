@@ -24,11 +24,11 @@ Body:
 ```json
 {
   "lead": { "email": "...", "phone": "...", "name": "...", "message": "..." },
-  "attribution": { "gclid": "...", "utm_source": "...", "utm_medium": "...", "utm_campaign": "..." },
+  "attribution": { "gclid": "...", "utmSource": "...", "utmMedium": "...", "utmCampaign": "..." },
   "marketingConsent": true
 }
 ```
-- Provide **at least one of `lead.email` or `lead.phone`** (otherwise the API returns `422`).
+- Provide **at least one of `lead.email` or `lead.phone`** (otherwise the API returns `400`).
 - Success → `201 { "submissionId": "...", "kind": "contact" }`.
 - Intake is **origin-gated**: the request `Origin` must be in your tenant's allowed origins, or call it
   **server-side** (keep the key off the browser) by proxying through your own backend route.
